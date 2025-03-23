@@ -17,7 +17,7 @@
             <div class="content">
                 <div class="logo">
                     <a href="index.html">
-                        <h1 class="logo">Zherong Wu’s Page</h1>
+                        <h1 class="logo">Jin’s Page</h1>
                     </a>
                 </div>
                 <button class="menu">
@@ -236,12 +236,12 @@
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('animate'); 
-                        observer.unobserve(entry.target); 
+                        entry.target.classList.add('animate');
+                        observer.unobserve(entry.target);
                     }
                 });
             }, {
-                threshold: 0.5 
+                threshold: 0.5
             });
 
             document.querySelectorAll(".item").forEach(item => {
