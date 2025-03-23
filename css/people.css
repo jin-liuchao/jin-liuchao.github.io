@@ -1,0 +1,556 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+.people {
+    padding: 8rem 0;
+}
+
+.people .content {
+    display: flex;
+}
+
+.people .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #eee;
+    margin-right: 60px;
+}
+
+.people .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.people .right>* {
+    margin-bottom: 40px;
+}
+
+.people .right>*:last-child {
+    margin-bottom: 0;
+}
+
+.people .image {
+    margin-bottom: 30px;
+    width: 470px;
+    margin: 0 auto;
+}
+
+.people .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.people .info h4 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.people .titles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+.people .titles>* {
+    margin-bottom: 4px;
+}
+
+.people .titles>*:last-child {
+    margin-bottom: 0;
+}
+
+.people .titles p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #212121;
+    color: inherit;
+    margin: 0;
+}
+
+.people .titles p.thin {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    color: inherit;
+}
+
+.people .right h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: inherit;
+}
+
+.people .description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.people .description p {
+    margin-bottom: 1rem;
+}
+
+.people .description strong {
+    font-weight: 600;
+}
+
+.people .description .underline {
+    text-decoration: underline;
+}
+
+.people .social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.people .social-links>* {
+    margin-right: 30px;
+}
+
+.people .social-links>*:last-child {
+    margin-right: 0;
+}
+
+.people .social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.people .social-links a>* {
+    margin-bottom: 10px;
+}
+
+.people .social-links a>*:last-child {
+    margin-bottom: 0;
+}
+
+.people .social-links img {
+    width: 50px;
+}
+
+.people .social-links p {
+    font-size: .875rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: rgba(117, 125, 33, 0.8);
+    color: inherit;
+}
+
+.education-position {
+    padding: 60px 0;
+}
+
+.education-position .content {
+    display: flex;
+}
+
+.education-position .section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.education-position .section:last-child {
+    margin-right: 0;
+}
+
+.education-position h4 {
+    margin-bottom: 2rem;
+    padding: 0 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: inherit;
+    border-bottom: 1px solid #ccc;
+}
+
+.education-position ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    list-style-type: disc;
+}
+
+.education-position ul>* {
+    margin-bottom: 1rem;
+}
+
+.education-position ul>*:last-child {
+    margin-bottom: 0;
+}
+
+.education-position ul p {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.education-position ul p::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/square.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.education-position li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #212121;
+    color: inherit;
+    list-style-type: disc;
+}
+
+.group-members {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.group-members h2 {
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: rgba(117, 125, 33, 0.8);
+    color: inherit;
+}
+
+.group-members ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -3rem;
+}
+
+.group-members li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.group-members li>* {
+    margin-bottom: 1rem;
+}
+
+.group-members li>*:last-child {
+    margin-bottom: 0;
+}
+
+.group-members .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.group-members .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.group-members .name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: #212121;
+}
+
+.group-members .title {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(117, 125, 33, 0.8);
+    color: inherit;
+}
+
+.awards {
+    padding: 6rem 0;
+}
+
+.awards h2 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #000;
+}
+
+.awards .list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.awards .list>* {
+    margin-bottom: 2rem;
+}
+
+.awards .list>*:last-child {
+    margin-bottom: 0;
+}
+
+.awards .item {
+    display: flex;
+    border-bottom: 2px dashed #ccc;
+}
+
+.awards .year {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #212121;
+    margin-right: 2rem;
+}
+
+.awards h3 {
+    display: block;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: #212121;
+}
+
+.awards p {
+    display: block;
+    font-size: 1rem;
+    ;
+    line-height: 1.75rem;
+    font-weight: 100;
+    color: #212121;
+}
+
+
+@media (max-width: 768px) {
+    .people {
+        padding: 4rem 0;
+    }
+
+    .people .content {
+        flex-direction: column;
+    }
+
+    .people .left {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        border: none;
+    }
+
+    .people .image {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .people .info h4 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .people .titles p {
+        font-size: 1rem;
+    }
+
+    .people .right h2 {
+        font-size: 1.75rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .people .description {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .people .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .education-position {
+        padding: 3rem 0;
+    }
+
+    .education-position .content {
+        flex-direction: column;
+    }
+
+    .education-position .section {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .education-position .section:last-child {
+        margin-bottom: 0;
+    }
+
+    .education-position h4 {
+        font-size: 1.25rem;
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .education-position li {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    .awards {
+        padding: 3rem 0;
+    }
+
+    .awards h2 {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .awards .year {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .awards h3 {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .awards p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .group-members {
+        padding: 3rem 0;
+    }
+
+    .group-members h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .group-members ul {
+        margin: -1.5rem;
+    }
+
+    .group-members li {
+        margin: 1.5rem;
+    }
+
+    .group-members .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .group-members .name {
+        font-size: 1rem;
+    }
+
+    .group-members .title {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .people {
+        padding: 3rem 0;
+    }
+
+
+    .people .right h2 {
+        font-size: 1.5rem;
+    }
+
+    .people .description {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    .people .social-links img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .education-position {
+        padding: 2rem 0;
+    }
+
+    .education-position h4 {
+        font-size: 1.125rem;
+    }
+
+    .education-position li {
+        font-size: 0.8125rem;
+    }
+
+    .awards .year {
+        font-size: 0.875rem;
+    }
+
+
+    .group-members .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .group-members .name {
+        font-size: 0.875rem;
+    }
+
+    .group-members .title {
+        font-size: 0.6875rem;
+    }
+}
+
+.left,
+.right {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.left {
+    transform: translateX(-100px);
+}
+
+.right {
+    transform: translateX(100px);
+}
+
+.education-position,
+.awards {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.left.animate,
+.right.animate,
+.education-position.animate,
+.awards.animate {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}

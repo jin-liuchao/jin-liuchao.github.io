@@ -1,0 +1,356 @@
+body {
+    padding-top: 0 ;
+}
+
+.navbar {
+    background-color: rgba(117, 125, 33, 0.6);
+    z-index: 10;
+} 
+
+
+.banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 60vh;
+    margin-top: 25vh;
+    padding: 0 1rem;
+}
+
+.banner .title {
+    margin-bottom: auto;
+}
+
+.banner h2 {
+    margin-bottom: 1rem;
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+.banner h1 {
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.banner h3 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.banner .btn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    animation: floating 2s ease-in-out infinite;
+}
+
+.banner .btn span {
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.banner .btn .icon {
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    fill: currentColor;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.banner .btn:hover {
+    color: #69c0ff;
+}
+
+.banner .btn:hover .icon {
+    border-color: #69c0ff;
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 3.75rem;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner h3 {
+        font-size: 1.25rem;
+    }
+
+    .banner .btn {
+        font-size: 1.5rem;
+    }
+
+    .banner .btn .icon {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner h2 {
+        font-size: 1.25rem;
+    }
+
+    .banner h3 {
+        font-size: 1rem;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about {
+    padding: 6rem 0;
+}
+
+.about .intro {
+    margin: 0 auto 6rem;
+}
+
+.about .intro h2 {
+    margin-bottom: 2rem;
+    font-size: 3.75rem;
+    line-height: 1;
+    color: rgba(117, 125, 33, 0.8);
+    color: inherit;
+}
+
+.about .intro p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: rgba(117, 125, 33, 0.8);
+    color: inherit;
+}
+
+.about .intro .link {
+    color: rgba(117, 125, 33, 0.6);
+}
+
+.about .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: -2rem -1.25rem;
+}
+
+.about .grid .item {
+    display: contents;
+}
+
+.about .grid .image {
+    grid-column: span 1;
+    justify-self: end;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem 1.25rem;
+}
+
+.about .grid .content {
+    grid-column: span 2;
+    align-self: center;
+    margin: 2rem 1.25rem;
+}
+
+.about .grid .item.reverse .image {
+    grid-column: 5/6;
+}
+
+.about .grid .item.reverse .content {
+    grid-column: 3/5;
+    text-align: right;
+}
+
+.about .grid .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.about .grid h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(117, 125, 33, 0.8);
+    color: inherit;
+}
+
+.about .grid p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #000;
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    .about .grid .image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about .grid h3 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .about .grid p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner h3 {
+        font-size: 1.25rem;
+    }
+
+    .banner .btn {
+        font-size: 1.5rem;
+    }
+
+    .banner .btn .icon {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+
+    .about {
+        padding: 4rem 0;
+    }
+
+    .about .intro {
+        margin-bottom: 4rem;
+        padding: 0 1rem;
+    }
+
+    .about .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: -1.25rem;
+        padding: 0 1rem;
+    }
+
+    .about .grid .image {
+        width: 90px;
+        height: 90px;
+        grid-column: span 1;
+        margin: 1.25rem;
+    }
+
+    .about .grid .content {
+        grid-column: span 2;
+        margin: 1.25rem;
+    }
+
+    .about .grid .item.reverse .image {
+        grid-column: 3/4;
+    }
+
+    .about .grid .item.reverse .content {
+        grid-column: 1/3;
+        text-align: right;
+    }
+
+    .about .grid h3 {
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .about .grid p {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .about .intro h2 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .about .intro p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner h2 {
+        font-size: 1.25rem;
+    }
+
+    .banner h3 {
+        font-size: 1rem;
+    }
+
+    .about .intro h2 {
+        font-size: 2rem;
+    }
+
+    .about .intro p {
+        font-size: 1rem;
+    }
+
+    .about .grid .image {
+        width: 90px;
+        height: 90px;
+    }
+}
+
