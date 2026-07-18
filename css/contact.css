@@ -1,0 +1,469 @@
+.contact-hero__grid {
+  align-items: center;
+  display: grid;
+  gap: clamp(2.5rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1.12fr) minmax(19rem, 0.88fr);
+}
+
+.contact-hero__copy h1 {
+  max-width: none;
+  white-space: nowrap;
+}
+
+.contact-hero__copy .lede {
+  max-width: 43rem;
+}
+
+.contact-hero__copy .button-row {
+  margin-top: 1.75rem;
+}
+
+.quick-contact {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(23, 62, 53, 0.16);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.quick-contact__label,
+.identity-card__kicker,
+.location-card__label {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.quick-contact__email {
+  color: var(--primary-dark);
+  display: inline-block;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.quick-contact address {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.65;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+.quick-contact address strong {
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.quick-contact__location {
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 750;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  min-height: 44px;
+  align-items: center;
+}
+
+.contact-heading,
+.location-heading {
+  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 1.1fr);
+}
+
+.contact-overview {
+  align-items: start;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(18rem, 0.72fr) minmax(0, 1.28fr);
+}
+
+.identity-card {
+  background: linear-gradient(150deg, #21493e, #102b25);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  color: rgba(255, 255, 255, 0.76);
+  padding: clamp(1.75rem, 4vw, 2.6rem);
+  position: sticky;
+  top: 6.5rem;
+}
+
+.identity-card__kicker {
+  color: #e5cb6d;
+}
+
+.identity-card h3 {
+  color: #fff;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-bottom: 0.45rem;
+}
+
+.identity-card__role {
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+.direct-details {
+  margin: 0;
+}
+
+.direct-details > div {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding-block: 1rem;
+}
+
+.direct-details dt {
+  color: #e5cb6d;
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.direct-details dd {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0.3rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.direct-details a {
+  color: #fff;
+}
+
+.identity-card__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1.25rem;
+}
+
+.button--light {
+  background: #f0cf62;
+  color: #153128;
+}
+
+.button--light:hover {
+  background: #f7dc82;
+  color: #102b25;
+}
+
+.identity-card__text-link {
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 750;
+  min-height: 44px;
+  align-items: center;
+}
+
+.identity-card__text-link:hover {
+  color: #f4dd8b;
+}
+
+.profiles-panel__intro {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.profiles-panel__intro h3 {
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+}
+
+.profiles-panel__intro p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.profile-links {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.profile-link {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 2.8rem minmax(0, 1fr) auto;
+  min-height: 5.3rem;
+  padding: 0.85rem;
+  text-decoration: none;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.profile-link:hover {
+  border-color: rgba(23, 62, 53, 0.45);
+  box-shadow: var(--shadow-sm);
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.profile-link__mark {
+  align-items: center;
+  aspect-ratio: 1;
+  background: #fff;
+  border: 1px solid #d9dfd8;
+  border-radius: 50%;
+  color: var(--primary);
+  display: inline-flex;
+  font-size: 1.22rem;
+  justify-content: center;
+}
+
+.profile-link__mark i {
+  line-height: 1;
+}
+
+.profile-link--website .profile-link__mark {
+  background: #eef3ea;
+  color: #173e35;
+}
+
+.profile-link--scholar .profile-link__mark {
+  background: #edf4ff;
+  color: #4285f4;
+}
+
+.profile-link--researchgate .profile-link__mark {
+  background: #ebfbf8;
+  color: #00a98f;
+}
+
+.profile-link--orcid .profile-link__mark {
+  background: #f3f9e8;
+  color: #78a800;
+}
+
+.profile-link--linkedin .profile-link__mark {
+  background: #edf6fb;
+  color: #0a66c2;
+}
+
+.profile-link--github .profile-link__mark,
+.profile-link--x .profile-link__mark {
+  background: #f1f2f3;
+  color: #111;
+}
+
+.profile-link--facebook .profile-link__mark {
+  background: #eef4ff;
+  color: #1877f2;
+}
+
+.profile-link--instagram .profile-link__mark {
+  background: #fff0f5;
+  color: #d62976;
+}
+
+.profile-link--youtube .profile-link__mark {
+  background: #fff0f0;
+  color: #ff0000;
+}
+
+.profile-link__copy {
+  min-width: 0;
+}
+
+.profile-link__copy strong,
+.profile-link__copy small {
+  display: block;
+}
+
+.profile-link__copy strong {
+  line-height: 1.35;
+}
+
+.profile-link__copy small {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  margin-top: 0.15rem;
+  overflow-wrap: anywhere;
+}
+
+.profile-link__arrow {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.location-section {
+  border-top: 1px solid var(--border);
+}
+
+.location-layout {
+  align-items: stretch;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(18rem, 0.78fr) minmax(0, 1.22fr);
+}
+
+.location-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.location-card h3 {
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  margin-bottom: 0.45rem;
+}
+
+.location-card__subtitle {
+  color: var(--primary);
+  font-weight: 750;
+  margin-bottom: 1.2rem;
+}
+
+.location-card address {
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.location-facts {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.5rem 0;
+}
+
+.location-facts > div {
+  border-block: 1px solid var(--border);
+  padding: 0.9rem 0.65rem 0.9rem 0;
+}
+
+.location-facts dt {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.location-facts dd {
+  color: var(--ink);
+  font-weight: 800;
+  margin: 0.2rem 0 0;
+}
+
+.location-actions {
+  margin-top: 1.3rem;
+}
+
+.map-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-rows: minmax(28rem, 1fr) auto;
+  margin: 0;
+  overflow: hidden;
+}
+
+.map-card iframe {
+  border: 0;
+  display: block;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+}
+
+.map-card figcaption {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  padding: 0.8rem 1rem;
+}
+
+@media (max-width: 62rem) {
+  .contact-heading,
+  .location-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-overview,
+  .location-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .identity-card {
+    position: static;
+  }
+
+  .map-card {
+    grid-template-rows: 26rem auto;
+  }
+}
+
+@media (max-width: 56rem) {
+  .contact-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-contact {
+    max-width: 38rem;
+  }
+}
+
+@media (max-width: 42rem) {
+  .contact-hero__copy h1 {
+    white-space: normal;
+  }
+
+  .profile-links,
+  .location-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .location-facts > div + div {
+    border-top: 0;
+  }
+
+  .map-card {
+    grid-template-rows: 20rem auto;
+  }
+}
+
+@media print {
+  .map-card {
+    display: none;
+  }
+
+  .contact-overview,
+  .location-layout {
+    display: block;
+  }
+
+  .identity-card {
+    background: #fff;
+    border: 1px solid #bbb;
+    box-shadow: none;
+    color: #111;
+    margin-bottom: 1.5rem;
+  }
+
+  .identity-card h3,
+  .direct-details dd,
+  .direct-details a,
+  .identity-card__text-link {
+    color: #111;
+  }
+}
