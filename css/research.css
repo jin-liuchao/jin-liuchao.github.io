@@ -1,19 +1,126 @@
+.research-hero {
+  align-items: center;
+  background: #071b18;
+  border-bottom-color: rgba(226, 207, 137, 0.2);
+  color: #f8f6ee;
+  display: grid;
+  isolation: isolate;
+  min-height: calc(100vh - var(--site-header-height));
+  min-height: calc(100svh - var(--site-header-height));
+  overflow: hidden;
+  position: relative;
+}
+
+.research-hero::before,
+.research-hero::after {
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.research-hero::before {
+  background:
+    linear-gradient(90deg, rgba(3, 22, 18, 0.98) 0%, rgba(4, 29, 24, 0.92) 32%, rgba(5, 31, 26, 0.72) 57%, rgba(4, 24, 20, 0.38) 82%, rgba(4, 22, 18, 0.46) 100%),
+    linear-gradient(180deg, rgba(3, 18, 15, 0.24), rgba(3, 18, 15, 0.52));
+  z-index: 1;
+}
+
+.research-hero::after {
+  animation: research-hero-light 16s ease-in-out infinite alternate;
+  background:
+    radial-gradient(circle at 76% 43%, rgba(225, 186, 62, 0.2), transparent 24%),
+    radial-gradient(circle at 21% 31%, rgba(161, 187, 135, 0.13), transparent 22%);
+  mix-blend-mode: screen;
+  opacity: 0.62;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.research-hero__media {
+  background: #071b18 url("../images/optimized/research-pillars-ai-poster-v1.webp") center / cover no-repeat;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+}
+
+.research-hero__video {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
 .research-hero .page-hero__inner {
   max-width: var(--shell);
+  position: relative;
+  z-index: 3;
+}
+
+.research-hero .eyebrow {
+  color: #f0cd5e;
 }
 
 .research-hero h1 {
+  color: #fffdf7;
   font-size: clamp(3rem, 4.2vw, 4.25rem);
   line-height: 1.02;
   max-width: none;
+  text-shadow: 0 0.12em 0.5em rgba(0, 0, 0, 0.28);
 }
 
 .research-hero .lede {
+  color: rgba(247, 245, 235, 0.84);
   max-width: 62rem;
+  text-shadow: 0 0.08em 0.45em rgba(0, 0, 0, 0.42);
 }
 
 .research-hero .button-row {
   margin-top: 1.75rem;
+}
+
+.research-hero .button--primary {
+  background: #efca52;
+  border-color: #efca52;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
+  color: #0a3028;
+}
+
+.research-hero .button--primary:hover,
+.research-hero .button--primary:focus-visible {
+  background: #f6d86d;
+  border-color: #f6d86d;
+}
+
+.research-hero .button--ghost {
+  backdrop-filter: blur(0.45rem);
+  background: rgba(8, 42, 34, 0.5);
+  border-color: rgba(255, 255, 255, 0.46);
+  color: #fffdf7;
+}
+
+.research-hero .button--ghost:hover,
+.research-hero .button--ghost:focus-visible {
+  background: rgba(255, 255, 255, 0.13);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes research-hero-light {
+  0% {
+    opacity: 0.42;
+    transform: translate3d(-3%, 1%, 0) scale(1.04);
+  }
+  55% {
+    opacity: 0.68;
+    transform: translate3d(2%, -2%, 0) scale(1.1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate3d(5%, 1%, 0) scale(1.06);
+  }
 }
 
 @media (min-width: 56rem) {
@@ -436,6 +543,16 @@
 }
 
 @media (max-width: 55.99rem) {
+  .research-hero::before {
+    background:
+      linear-gradient(90deg, rgba(3, 22, 18, 0.96), rgba(4, 27, 22, 0.72)),
+      linear-gradient(180deg, rgba(3, 18, 15, 0.32), rgba(3, 18, 15, 0.72));
+  }
+
+  .research-hero__video {
+    object-position: 66% center;
+  }
+
   .research-hero h1 {
     font-size: clamp(2.65rem, 7.4vw, 3.6rem);
     max-width: 17ch;
@@ -499,5 +616,17 @@
 
   .theme-card h3 {
     min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-hero::after {
+    animation: none;
+    opacity: 0.5;
+    transform: none;
+  }
+
+  .research-hero__video {
+    display: none;
   }
 }
