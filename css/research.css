@@ -159,6 +159,64 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.research-lab-entry {
+  align-items: center;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(224, 188, 75, 0.2), transparent 28%),
+    linear-gradient(125deg, #0b2b24 0%, #173e35 58%, #215647 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  box-shadow: 0 1.35rem 3rem rgba(16, 43, 37, 0.14);
+  color: #fff;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: clamp(2.25rem, 5vw, 4rem);
+  overflow: hidden;
+  padding: clamp(1.6rem, 4vw, 2.75rem);
+  position: relative;
+}
+
+.research-lab-entry::before {
+  background: #e0bc4b;
+  content: "";
+  height: 100%;
+  inset: 0 auto 0 0;
+  position: absolute;
+  width: 0.28rem;
+}
+
+.research-lab-entry .eyebrow {
+  color: #e0bc4b;
+  margin-bottom: 0.6rem;
+}
+
+.research-lab-entry h3 {
+  color: #fff;
+  font-size: clamp(1.55rem, 3vw, 2.45rem);
+  margin: 0;
+  max-width: 22ch;
+}
+
+.research-lab-entry p:last-child {
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.7;
+  margin: 0.85rem 0 0;
+  max-width: 48rem;
+}
+
+.research-lab-entry__button {
+  background: #e0bc4b;
+  color: #102b25;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.research-lab-entry__button:hover {
+  background: #f0ce5d;
+  color: #102b25;
+}
+
 .theme-card {
   border-top: 4px solid var(--primary);
   display: flex;
@@ -616,6 +674,15 @@
 
   .theme-card h3 {
     min-height: 0;
+  }
+
+  .research-lab-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .research-lab-entry__button {
+    justify-self: start;
+    white-space: normal;
   }
 }
 
