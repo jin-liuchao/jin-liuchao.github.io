@@ -166,6 +166,11 @@
       text-wrap: balance;
     }
 
+    .matter-copy h1.stage-title--compact {
+      max-width: 14ch;
+      font-size: clamp(2.35rem, 3.75vw, 4.1rem);
+    }
+
     .stage-summary {
       max-width: 37rem;
       margin: 1.55rem 0 0;
@@ -440,6 +445,11 @@
         font-size: clamp(2.35rem, 9vw, 4.1rem);
       }
 
+      .matter-copy h1.stage-title--compact {
+        max-width: 15ch;
+        font-size: clamp(2.25rem, 8.2vw, 3.7rem);
+      }
+
       .stage-summary {
         display: -webkit-box;
         overflow: hidden;
@@ -499,6 +509,10 @@
         font-size: clamp(2.1rem, 10vw, 3rem);
       }
 
+      .matter-copy h1.stage-title--compact {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+      }
+
       .stage-summary {
         margin-top: 0.9rem;
         font-size: 0.94rem;
@@ -542,6 +556,10 @@
 
       .matter-copy h1 {
         font-size: clamp(2.35rem, 3.8vw, 3.8rem);
+      }
+
+      .matter-copy h1.stage-title--compact {
+        font-size: clamp(2.3rem, 3.45vw, 3.55rem);
       }
 
       .stage-summary,
@@ -691,7 +709,7 @@
         },
         {
           number: "03",
-          title: "Bio-inspired soft robotic systems",
+          title: "Bio‑inspired soft robotic systems",
           summary: "Fabricated matter acquires adaptive behavior. Origami-inspired geometry and hard–soft material coupling form a compliant gripper that reshapes itself around an object—turning material intelligence into embodied action.",
           tags: ["Soft robotics", "Origami", "Embodied intelligence"],
           href: "research.html#featured-work",
@@ -1007,6 +1025,7 @@
         activeStage = stageIndex;
         numberElement.textContent = stage.number;
         titleElement.textContent = stage.title;
+        titleElement.classList.toggle("stage-title--compact", stageIndex === 2);
         summaryElement.textContent = stage.summary;
         stageLink.href = stage.href;
         paperLink.href = stage.paper;
