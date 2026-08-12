@@ -9,7 +9,7 @@
 - 首页深绿背景加入缓慢游走的金色与苔绿色环境光，并为减少动态效果偏好保留静止版本
 - 新增独立 `About` 页面；旧 `people.html` 自动跳转，避免旧链接失效
 - Research 用“挑战—方法—结果”解释已发表工作，并新增三大研究支柱、审稿中工作、未来 5–10 年方向和受治理的自主科学发现框架
-- Publications 现有 37 条网页记录，补齐 3 篇 2026 论文并按正式卷期年份修正多条元数据；支持关键词、年份和主题筛选，以及摘要与引用复制
+- Publications 现有 39 条网页记录，并按正式卷期年份维护元数据；支持关键词、年份和主题筛选，以及摘要与引用复制
 - News 补入 2026 Best Presentation、Best Poster、Reaching Out Award 等重要动态
 - About 按 2026-07-14 版 CV 更新教育背景、南方科技大学研究经历与 2026 荣誉
 - 新版 CV 已作为本地站点文件收录，所有页面不再依赖旧的反向拼写域名
@@ -38,7 +38,7 @@ research.html              研究方向、案例与项目
 publications.html          完整论文列表与筛选工具
 news.html                  新闻与里程碑
 contact.html               完整联系方式、学术主页与 CUHK 办公室地图
-files/Liuchao_Jin_CV.pdf   2026-07-14 版 CV
+CV（外部链接）             Liuchao-JIN.github.io/files/affairs/cv_liuchao_jin.pdf
 people.html                旧地址兼容跳转
 404.html                   友好的未找到页面
 css/common.css             全站视觉变量、导航、按钮、页脚和响应式规则
@@ -53,7 +53,7 @@ robots.txt / sitemap.xml    搜索引擎基础文件
 
 本轮更新以四份附件为内容依据：
 
-- `Liuchao_Jin_CV.pdf`：身份、教育、访问经历、荣誉、报告与精选论文的主要事实基线；
+- `cv_liuchao_jin.pdf`（原网站外部链接）：身份、教育、访问经历、荣誉、报告与精选论文的主要事实基线；
 - `Liuchao_Jin_Research_Statement.pdf`：长期研究愿景、三大研究支柱、代表贡献与未来 5–10 年方向；
 - `slide_deck_20min.pptx`：从智能物质到自主科学发现的研究主线、ResearchState、专业智能体和治理原则；
 - `interview_v2.pptx`：逆向设计方法谱系、当前审稿中工作和端到端 AI Scientist 构想。
@@ -102,7 +102,7 @@ robots.txt / sitemap.xml    搜索引擎基础文件
 - 响应式排版规则通过专项检查，覆盖标题宽度、容器留白、平板网格、时间线日期、吸顶年份与科研图片完整展示；
 - 公共脚本和 Publications 脚本通过 Node.js 语法检查；
 - 本地链接、图片、`srcset`、ARIA 引用、重复 ID、图片 `alt` 和新窗口安全属性通过自定义检查；
-- 37 条论文记录、5 个年份分组、连续编号、无重复标题和新增 2026 论文通过内容校验；
+- 39 条论文记录、5 个年份分组、连续编号、无重复标题和新增 2026 论文通过内容校验；
 - 本地 CV 与提供的 2026-07-14 源文件 SHA-256 一致；
 - `site.webmanifest`、`sitemap.xml` 与两处 JSON-LD 均可正常解析；
 - 44 个新图片/图标资产已验证可解码，社交图尺寸为 1200×630。
